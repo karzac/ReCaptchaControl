@@ -24,6 +24,9 @@ use Nette\Utils\Html;
 class ReCaptchaControl extends Forms\Controls\BaseControl
 {
 
+	/** Validation callback */
+	const VALID = __CLASS__ . '::validateValid';
+
 	/** @var ReCaptcha */
 	private $reCaptcha;
 
